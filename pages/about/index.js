@@ -1,4 +1,4 @@
-function Hi(){
-    return  <h1>hi</h1>
- }
- export default Hi
+function Hi() {
+  return <h1>home</h1>;
+}
+export default Hi;
