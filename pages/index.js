@@ -189,7 +189,7 @@ export default function Home() {
                 summary: false,
                 projects: true,
                 education: false,
-                workExpirience: falseq,
+                workExpirience: false,
               })
             }
           >
