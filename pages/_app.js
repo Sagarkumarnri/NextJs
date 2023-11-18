@@ -1,10 +1,5 @@
-import "@/styles/globals.css";
-import ButtonAppBar from "./components/Navabar";
+import '@/styles/globals.css'
 
 export default function App({ Component, pageProps }) {
-  return (
-    <>
-      <Component {...pageProps} className="container" />
-    </>
-  );
+  return <Component {...pageProps} />
 }
