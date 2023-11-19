@@ -1,235 +1,37 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import { Avatar } from "@mui/material";
-import { useSelectedLayoutSegment } from "next/navigation";
-import { useState, useEffect } from "react";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import Link from "next/link";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import EmailIcon from "@mui/icons-material/Email";
-
-const inter = Inter({ subsets: ["latin"] });
-
+import Header from "../public/components/header";
 export default function Home() {
-  const [active, setActive] = useState({
-    summary: true,
-    workExpirience: false,
-    education: false,
-    projects: false,
-  });
-  // Empty dependency array means this effect runs once on mount
-
   return (
-    <div className={styles.container}>
-      <div className={styles.section1}>
-        <div className={styles.section21}>
-          <div className={styles.profilePhoto}>
-            <Avatar
-              alt="Remy Sharp"
-              src="/photo_resume.jpeg"
-              sx={{ width: 200, height: 200 }}
-              className={styles.avatar}
-            />
-          </div>
-
-          <div className={styles.details}>
-            <span style={{ color: "#4f93f5" }}>Hello</span>
-            <span> I'm Sagar Patra</span>
-            <span style={{ paddingTop: "4%", fontSize: "16px" }}>
-              {" "}
-              A Full Stack Developer
-            </span>
-          </div>
-        </div>
-        <div className={styles.section12}>
-          <div className={styles.left}>
-            <span
-              style={{
-                color: "#94727b",
-                padding: "5px",
-                fontSize: "18px",
-                fontStyle: "italic",
-              }}
-            >
-              <blockquote>
-                {
-                  "	I bring three years of experience in full-stack development, specializing in React, Redux, Next.js, and Spring Boot. Proficient in UI libraries like Bootstrap, Material UI, and automated testing with Cypress. Skilled in CICD tools (GIT, Jenkins), database platforms (PostgreSQL, Firebase), and software development practices. Experienced in JavaScript, TypeScript, and React Testing Library. Knowledgeable in Spring Cloud and Microservices."
-                }
-              </blockquote>
-            </span>
-          </div>
-          <div className={styles.right}>
-            <span
-              style={{ color: "#8f5058", fontSize: "20px", fontWeight: "bold" }}
-            >
-              Technical Skills
-            </span>
-            <div>
-              <span style={{ color: "#f6f8fb", fontSize: "18px" }}>
-                Primary
-              </span>
-            </div>
-            <ul style={{ color: "#f6f8fb" }}>
-              <li>React</li>
-              <li>Redux</li>
-              <li>Next</li>
-              <li>Java Script</li>
-              <li>TypeScript</li>
-            </ul>
-            <div>
-              <span style={{ color: "#f6f8fb", fontSize: "18px" }}>
-                Secondary
-              </span>
-            </div>
-            <ul style={{ color: "#f6f8fb" }}>
-              <li>Java</li>
-              <li>Spring Boot</li>
-            </ul>
-            <div>
-              <span style={{ color: "#f6f8fb", fontSize: "18px" }}>
-                UI Libreries
-              </span>
-            </div>
-            <ul style={{ color: "#f6f8fb" }}>
-              <li>Material UI</li>
-              <li>Bootstrap</li>
-            </ul>
-            <div>
-              <span style={{ color: "#f6f8fb", fontSize: "18px" }}>
-                Cloud Knowledge
-              </span>
-            </div>
-            <ul style={{ color: "#f6f8fb" }}>
-              <li>AWS</li>
-            </ul>
-          </div>
-        </div>
+    <>
+      <div className={styles.content}>
+        <Header headerName={"Summary"}></Header>
+        <span>
+          I possess 3 years of valuable experience in developing full-stack
+          applications, primarily focusing on front-end technologies such as
+          React, Redux, Next Js and used UI libraries like Bootstrap, Material
+          UI. Additionally, I am skilled in building robust backend applications
+          using Spring Boot, Java 8, JPA, and JDBC. During my 5-month internship
+          at DRDO, I gained hands-on experience as a Python Django Intern,
+          further enhancing my expertise. Furthermore, I have practical
+          knowledge in utilizing Redux Toolkit, Thunk,Saga and Next.js, and have
+          successfully employed Cypress for automated testing. My proficiency in
+          CICD tools, including GIT and Jenkins pipeline, streamlines the
+          development and deployment processes. With a deep understanding of
+          JavaScript and React, I am capable of crafting dynamic and responsive
+          user interfaces. To ensure the quality and reliability of my code, I
+          have been actively employing testing frameworks like React Testing
+          Library and Jest. My experience extends to working with various
+          database platforms like PostgreSQL and Firebase, enabling me to design
+          effective data solutions. I am well-versed in software development
+          practices, basic testing, and agile methodologies, ensuring the timely
+          delivery of high-quality projects that adapt to changing requirements.
+          Additionally, I possess knowledge of Spring Cloud and Microservices,
+          further enhancing my capabilities in designing distributed and
+          scalable systems. Moreover, I have experience in developing
+          applications using Test-Driven Development (TDD), which emphasizes
+          quality and maintainability in the development process.
+        </span>
       </div>
-      <div className={styles.section2}>sj</div>
-      <div className={styles.sidebar}>
-        <div
-          style={{
-            paddingTop: "5px",
-            height: "70%",
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          <Link
-            href="#"
-            passHref
-            style={{ textDecoration: "none", marginTop: "20px" }}
-            onClick={() =>
-              setActive({
-                ...active,
-                summary: true,
-                projects: false,
-                education: false,
-                workExpirience: false,
-              })
-            }
-          >
-            <span
-              class={active?.summary ? styles.navSpanActive : styles.navSpan}
-            >
-              Summary
-            </span>
-          </Link>
-          <Link
-            href="#"
-            style={{
-              textDecoration: "none",
-              marginTop: "20px",
-            }}
-            onClick={() =>
-              setActive({
-                ...active,
-                summary: false,
-                projects: false,
-                education: false,
-                workExpirience: true,
-              })
-            }
-          >
-            <span
-              class={
-                active?.workExpirience ? styles.navSpanActive : styles.navSpan
-              }
-            >
-              Work Expirience
-            </span>
-          </Link>
-          <Link
-            href="#"
-            style={{ textDecoration: "none", marginTop: "20px" }}
-            onClick={() =>
-              setActive({
-                ...active,
-                summary: false,
-                projects: false,
-                education: true,
-                workExpirience: false,
-              })
-            }
-          >
-            <span
-              class={active?.education ? styles.navSpanActive : styles.navSpan}
-            >
-              Education
-            </span>
-          </Link>
-          <Link
-            href="#"
-            style={{ textDecoration: "none", marginTop: "20px" }}
-            onClick={() =>
-              setActive({
-                ...active,
-                summary: false,
-                projects: true,
-                education: false,
-                workExpirience: false,
-              })
-            }
-          >
-            <span
-              class={active?.projects ? styles.navSpanActive : styles.navSpan}
-            >
-              Projects
-            </span>
-          </Link>
-        </div>
-        <div style={{ paddingTop: "10px", height: "30%" }}>
-          <Link href="https://www.linkedin.com/in/sagar-patra-8973b4170/">
-            <LinkedInIcon
-              style={{
-                paddingLeft: "10px",
-                paddingTop: "10px",
-                color: "white",
-              }}
-            ></LinkedInIcon>
-          </Link>
-          <Link href="https://github.com/Sagarkumarnri">
-            <GitHubIcon
-              style={{
-                paddingLeft: "10px",
-                paddingTop: "10px",
-                color: "white",
-              }}
-            ></GitHubIcon>
-          </Link>
-          <Link href="mailto:patrasagarkumar88@gmail.com">
-            <EmailIcon
-              style={{
-                paddingLeft: "10px",
-                paddingTop: "10px",
-                color: "white",
-              }}
-            ></EmailIcon>
-          </Link>
-        </div>
-      </div>
-    </div>
+    </>
   );
 }
