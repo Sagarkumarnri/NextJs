@@ -13,14 +13,14 @@ export default function Education() {
     <div className={styles.content}>
       <Header headerName={"Education"}></Header>
 
-      <Timeline position="alternate">
+      <Timeline position="alternate" style={{paddingBottom:"40px"}}>
         <TimelineItem>
-          <TimelineOppositeContent color="white">
+          <TimelineOppositeContent  >
             Graduation (2016-2020)
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot />
-            <TimelineConnector style={{ height: "60px" }} />
+            <TimelineConnector style={{ height: "140px" }} />
           </TimelineSeparator>
           <TimelineContent>
             <div style={{ display: "flex", flexDirection: "column" }}>
@@ -31,12 +31,12 @@ export default function Education() {
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
-          <TimelineOppositeContent color="white">
+          <TimelineOppositeContent  >
             +2 ( 2014-2016)
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot />
-            <TimelineConnector style={{ height: "70px" }} />
+            <TimelineConnector style={{ height: "140px" }} />
           </TimelineSeparator>
           <TimelineContent>
             <div style={{ display: "flex", flexDirection: "column" }}>
@@ -47,7 +47,7 @@ export default function Education() {
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
-          <TimelineOppositeContent style={{ height: "70px" }} color="white">
+          <TimelineOppositeContent style={{ height: "70px" }}  >
             SSC (2014 passed out)
           </TimelineOppositeContent>
           <TimelineSeparator style={{ height: "70px" }}>
@@ -56,7 +56,7 @@ export default function Education() {
           </TimelineSeparator>
           <TimelineContent>
             {" "}
-            <div style={{ display: "flex", flexDirection: "column" }}>
+            <div style={{ display: "flex", flexDirection: "column" ,paddingBottom:"40px"}}>
               <span>Sri Aurobindo High School</span>
               <span>Pulivendula</span>
               <span>CGPA-9.5</span>
