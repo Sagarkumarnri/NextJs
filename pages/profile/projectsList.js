@@ -11,8 +11,10 @@ export default function ImgMediaCard() {
   const router = useRouter();
    
   return (
+    <>
+    <Header headerName={"Projects"}></Header>
     <div className={styles.content}>
-      <Header headerName={"Projects"}></Header>
+
       <div style={{  padding: "5px" }}>
         <Card
           
@@ -66,7 +68,7 @@ export default function ImgMediaCard() {
           style={{ marginTop: "20px", backgroundColor:'#b0adadcf' }}
         >
           <CardActionArea
-            onClick={() => router.push("/profile/projectDetails/3")}
+            onClick={() => router.push("/profile/projectDetails/0")}
           >
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -76,22 +78,9 @@ export default function ImgMediaCard() {
             </CardContent>
           </CardActionArea>
         </Card>
-        <Card
-           
-          style={{ marginTop: "20px", backgroundColor:'#b0adadcf'  }}
-        >
-          <CardActionArea
-            onClick={() => router.push("/profile/projectDetails/4")}
-          >
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Portofolio.me
-              </Typography>
-               
-            </CardContent>
-          </CardActionArea>
-        </Card>
+        
       </div>
     </div>
+    </>
   );
 }

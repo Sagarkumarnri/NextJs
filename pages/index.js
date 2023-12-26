@@ -15,6 +15,7 @@ import CallIcon from "@mui/icons-material/Call";
 import SideBar from "./SideBar";
 import { Height } from "@mui/icons-material";
 import { useRouter } from "next/router";
+import styles  from '@/styles/mainPage.module.scss'
 import Link from "next/link";
 export default function Home({anchorElNav,setAnchorElNav}) {
   const router=useRouter()
@@ -26,18 +27,16 @@ export default function Home({anchorElNav,setAnchorElNav}) {
     <>
       
       <div  >
-      <Grid container className={"container"} >
-          <Grid item className={"item"} >
+      <Grid container className={styles.container} >
+          <Grid item className={styles.item} >
             <Avatar
               alt="Remy Sharp"
-              src="/photo_resume.jpeg"
-              className="avatar"
-              
-               
+              src="/bw.jpeg"
+              className={styles.avatar_style} 
             />
           </Grid>
 
-          <Grid item className={"item"}>
+          <Grid item className={styles.item}>
             <span style={{ color: "black", fontWeight:'bold', fontSize:"24px" }}>Hello</span>
             <span style={{ color: "black", fontWeight:'bold', fontSize:"24px" }}>A bit about my self</span>
             <div  >
@@ -48,10 +47,10 @@ export default function Home({anchorElNav,setAnchorElNav}) {
               </blockquote>
             </span>
           </div>
-          <div className="round-button-container">
-          <Button className="roundButton-projects"  variant="contained" color="primary">Resume</Button>
-          <Button className="roundButton-resume"  variant="contained" color="primary" onClick={()=>router.push("/profile/projectsList")}>Projects</Button>
-          <Button className="roundButton-contact"  variant="contained" color="primary">Skills</Button>
+          <div className={styles.round_button_container}>
+          <Button className={styles.roundButton_resume} variant="contained" color="primary" onClick={()=>router.push("/profile/workExpirience")}>Expirience</Button>
+          <Button className={styles.roundButton_projects}  variant="contained" color="primary" onClick={()=>router.push("/profile/projectsList")}>Projects</Button>
+          <Button className={styles.roundButton_contact}  variant="contained" color="primary" onClick={()=>router.push("/profile/skills")}>Skills</Button>
            
           </div>
           </Grid>

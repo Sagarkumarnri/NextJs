@@ -11,19 +11,38 @@ import { Height } from "@mui/icons-material";
 const Footer=()=>{
 
     return(
-        <Grid container spacing={4} flexDirection={'column'} className={styles.footer_container} >
+        <Grid container spacing={4} className={styles.footer_container} >
              
          <Grid item >
         <div className={styles.footer_header} >Phone</div>
-            <div>9705205604</div>
+            <span>9705205604</span>
+            
+          <Link href="tell:+91 9705205604">
+            <CallIcon
+              style={{
+                paddingLeft: "20px",
+                paddingTop: "10px",
+                color:"black"
+              }}
+            ></CallIcon>
+          </Link>
          </Grid>
          <Grid item >
             <div  className={styles.footer_header}>Email</div>
             <span>patrasagarkumar88@gmail.com</span>
+            <Link href="mailto:patrasagarkumar88@gmail.com">
+            <EmailIcon
+              style={{
+                paddingLeft: "20px",
+                paddingTop: "10px",
+                 color:"black"
+              }}
+            ></EmailIcon>
+          </Link>
          </Grid>
          <Grid item >
             <div className={styles.footer_header} >Follow Me</div>
-            <div style={{hight:"80px"}}>
+            <div style={{hight:"80px",}}>
             <Link href="https://www.linkedin.com/in/sagar-patra-8973b4170/">
             <LinkedInIcon
               style={{
@@ -42,25 +61,8 @@ const Footer=()=>{
               }}
             ></GitHubIcon>
           </Link>
-          <Link href="mailto:patrasagarkumar88@gmail.com">
-            <EmailIcon
-              style={{
-                paddingLeft: "20px",
-                paddingTop: "10px",
-                 color:"black"
-              }}
-            ></EmailIcon>
-          </Link>
+          
 
-          <Link href="tell:+91 9705205604">
-            <CallIcon
-              style={{
-                paddingLeft: "20px",
-                paddingTop: "10px",
-                color:"black"
-              }}
-            ></CallIcon>
-          </Link>
             </div>
          </Grid>
         </Grid>

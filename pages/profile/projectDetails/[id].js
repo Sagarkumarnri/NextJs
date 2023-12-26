@@ -10,11 +10,12 @@ const ProjectDetails = () => {
   const id = nextRouter?.query?.id - 1;
   console.log(nextRouter);
   return (
+    <><ArrowBackIcon
+    style={{ cursor: "pointer",paddingBottom:'15px' }}
+    onClick={() => router.push("/profile/projectsList")}
+  />
     <div className={styles.projectDetails}>
-      <ArrowBackIcon
-        style={{ cursor: "pointer",paddingBottom:'15px' }}
-        onClick={() => router.push("/profile/projectsList")}
-      />
+      
 
       <div className={styles.projectName}>{projects[id]?.projectName}</div>
       <div className={styles.projectData}>
@@ -63,6 +64,7 @@ const ProjectDetails = () => {
         </span>
       </div>
     </div>
+    </>
   );
 };
 export default ProjectDetails;

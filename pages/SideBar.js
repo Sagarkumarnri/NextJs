@@ -16,18 +16,13 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { useRouter } from 'next/navigation'
-const pages = ['Summary', 'Work Expirience', 'Education','Projects'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-import { makeStyles } from '@mui/styles';
+
+ 
 import CloseIcon from '@mui/icons-material/Close';
-const useStyles = makeStyles((theme) => ({
-    appBar: {
-      backgroundColor: 'your_desired_color', // Change this to the color you want
-      top:'0px'
-    },
-  }));
-  
+ 
 const SideBar=({anchorElNav,setAnchorElNav})=>{
+  const pages = ['Work Expirience', 'Education','Projects',"Skills"];
+const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
     const appBarStyle = {
         backgroundColor:' #c2c7cb',
         color:'black'
@@ -71,6 +66,10 @@ const SideBar=({anchorElNav,setAnchorElNav})=>{
         case "Projects":
             router.replace(`/profile/projectsList`)
             break;
+        case "Skills":
+              router.replace(`/profile/skills`)
+              break;
+  
 
 
             
@@ -78,7 +77,7 @@ const SideBar=({anchorElNav,setAnchorElNav})=>{
     }
    
 //    router.push(`profile/${page}`)
-    setAnchorElNav(null);
+    setAnchorElNav(true);
     console.log(page)
   };
 
@@ -95,7 +94,7 @@ return(
           variant="h6"
           noWrap
           component="a"
-          href="#app-bar-with-responsive-menu"
+          href="/"
           sx={{
             mr: 2,
             display: { xs: 'none', md: 'flex' },
@@ -115,7 +114,7 @@ return(
           variant="h6"
           noWrap
           component="a"
-          href="#app-bar-with-responsive-menu"
+          href="/"
           sx={{
             mr: 1,
             display: { xs: 'flex', md: 'none' },
@@ -126,7 +125,7 @@ return(
             color: 'inherit',
             textDecoration: 'none',
           }}
-          onClick={()=>router.push("/")}
+           
         >
         Sagar  
         </Typography>
@@ -153,7 +152,7 @@ return(
             <Button
               key={page}
               onClick={()=>handleCloseNavMenu(page)}
-              sx={{ my: 2, color: 'white', display: 'block' }}
+              sx={{ my: 2, color: 'black', display: 'block' }}
             >
               {page}
             </Button>
