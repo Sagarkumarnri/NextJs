@@ -51,7 +51,7 @@ export default function ImgMediaCard() {
           style={{ marginTop: "20px", backgroundColor:'#b0adadcf' }}
         >
           <CardActionArea
-            onClick={() => router.push("/profile/projectDetails/1")}
+            onClick={() => router.push("/profile/projectDetails/4")}
           >
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
