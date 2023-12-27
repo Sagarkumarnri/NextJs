@@ -1,33 +1,40 @@
+ 
+ 
+.body{
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: "#c2c7cb"
+}
 .container {
-  height: 1600px;
+  
   display: flex;
-  position: fixed;
-  overflow-y: auto;
-
-  overflow-y: auto;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background-color: #ffffff3d;
 }
 .section1 {
-  width: 35%;
-  height: 100%;
   background-color: #2c355f;
-  min-width: 350px;
-  overflow-y: scroll hidden;
-  min-height: 558px;
 }
 .section2 {
-  width: 60%;
-  height: 100%;
-  background-color: #141933;
+  padding: 4%;
+  background-color:#c2c7cb!important;
+  min-height: 100vh;
+   
 }
+@media only screen and (max-width: 600px) {.section2 {
+  padding: 4%;
+  background-color:#c2c7cb!important;
+   
+}}
 .content {
-  padding: 5%;
+  padding: 2%;
   display: flex;
   flex-direction: column;
-
-  text-shadow: #ffffff;
-  color: burlywood;
-  font-size: 20px;
-  font-style: italic;
+  
+   
+   
+   
+  background-color:rgba(255, 255, 255, 0.2392156863) ;
 }
 .section21 {
   width: 100%;
@@ -43,15 +50,15 @@
   left: 0;
 }
 .sidebar {
-  width: 5%;
-  height: 100vh; /* Full height of the viewport */
+  width: 100%;
+
   background: rgba(42, 51, 68, 1);
   color: #fff;
   padding: 20px;
-  position: fixed;
-  right: 0;
-  top: 0px;
-  margin: 8px;
+}
+.sidebar_content {
+  display: flex;
+  align-content: space-between;
 }
 
 .details {
@@ -59,9 +66,8 @@
   height: 100%;
   width: 50%;
   font-size: 40px;
-  color: white;
+   
   display: flex;
-  flex-direction: column;
 
   top: 0px;
   right: 0;
@@ -76,13 +82,13 @@
   height: 89%;
   width: 100%;
 
-  padding-top: 20px;
+  padding-top: 5%;
 }
 
 .left {
   border-right: 3px solid rgba(255, 255, 255, 0.025); /* White border on the right side */
   height: 100%;
-  width: 50%;
+  width: 60%;
 
   top: 600px;
   display: flex;
@@ -90,26 +96,71 @@
 }
 .right {
   height: 100%;
-  width: 50%;
+  width: 40%;
 
   top: 600px;
 }
 .navSpan {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 98%;
   text-decoration: none;
   padding-top: 20px;
   margin-top: 10px;
 }
 .navSpanActive {
-  color: #a18b4a;
-  font-size: 20px;
+  
+  font-size: 120%;
   text-decoration: none;
-  padding-top: 20px;
-  margin-top: 10px;
+  padding-top: 5%px;
+  margin-top: 5%px;
 }
 .a {
   color: -webkit-link;
   cursor: pointer;
   text-decoration: none;
+}
+.projectDetails {
+  padding-top: 3%;
+  padding: 2%;
+  padding-bottom: 40px;
+  background-color: #ffffff3d;
+  
+}
+.projectName {
+  height: 5%;
+  width: 100%;
+   
+  font-size: 28px;
+}
+.projectData {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  display: flex;
+  font-size: 18px;
+  height: 8%;
+  width: 100%;
+  flex-direction: column;
+}
+.startEndDate {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  
+}
+.countClient {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+   
+}
+.rolesAndResponsibillitesHeader {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.rolesAndResponsibillites {
+  margin-top: 30px;
+}
+.projectSummary {
+  margin-bottom: 20px;
 }
