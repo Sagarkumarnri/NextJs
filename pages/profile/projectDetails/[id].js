@@ -11,59 +11,56 @@ const ProjectDetails = () => {
   console.log(nextRouter);
   return (
     <><ArrowBackIcon
-    style={{ cursor: "pointer",paddingBottom:'15px' }}
-    onClick={() => router.push("/profile/projectsList")}
-  />
-    <div className={styles.projectDetails}>
-      
+      style={{ cursor: "pointer", paddingBottom: '15px' }}
+      onClick={() => router.push("/profile/projectsList")}/>
+      <div className={styles.projectDetails}>
+        <div className={styles.projectName}>{projects[id]?.projectName}</div>
+        <div className={styles.projectData}>
+          <div className={styles.countClient}>
+            <span style={{ height: "50%", paddingBottom: '5px' }}>
+              Start Date:
+              <span style={{ paddingLeft: "10px", paddingBottom: '5px' }}>
+                {projects[id]?.startDate}
+              </span>
+            </span>
+            <span style={{ height: "50%", paddingBottom: '5px' }}>
+              End Date :{" "}
+              <span style={{ paddingLeft: "10px", paddingBottom: '5px' }}>
+                {projects[id]?.endDate}
+              </span>
+            </span>
+          </div>
+          <div className={styles.countClient}>
+            <span style={{ height: "50%", paddingBottom: '5px' }}>
+              Team Size:{" "}
+              <span style={{ paddingLeft: "10px", paddingBottom: '5px' }}>
+                {projects[id]?.teamSize}
+              </span>
+            </span>
+            <span style={{ height: "50%", paddingBottom: '5px' }}>
+              Client:{" "}
+              <span style={{ paddingLeft: "10px", paddingBottom: '5px' }}>
+                {projects[id]?.client}
+              </span>
+            </span>
+          </div>
+        </div>
+        <div className={styles.projectSummary}>
+          <div className={styles.rolesAndResponsibillitesHeader}>
+            Project Summary
+          </div>
+          <span style={{}}>{projects[id]?.summary}</span>
+        </div>
+        <div className={styles.rolesAndResponsibillites}>
+          <div className={styles.rolesAndResponsibillitesHeader}>
+            Roles and Responsibilities
+          </div>
 
-      <div className={styles.projectName}>{projects[id]?.projectName}</div>
-      <div className={styles.projectData}>
-        <div className={styles.countClient}>
-          <span style={{ height: "50%", paddingBottom:'5px' }}>
-            Start Date:
-            <span style={{   paddingLeft: "10px" ,paddingBottom:'5px' }}>
-              {projects[id]?.startDate}
-            </span>
-          </span>
-          <span style={{ height: "50%",paddingBottom:'5px' }}>
-            End Date :{" "}
-            <span style={{  paddingLeft: "10px" ,paddingBottom:'5px'}}>
-              {projects[id]?.endDate}
-            </span>
-          </span>
-        </div>
-        <div className={styles.countClient}>
-          <span style={{ height: "50%",paddingBottom:'5px' }}>
-            Team Size:{" "}
-            <span style={{  paddingLeft: "10px" ,paddingBottom:'5px'}}>
-              {projects[id]?.teamSize}
-            </span>
-          </span>
-          <span style={{ height: "50%",paddingBottom:'5px' }}>
-            Client:{" "}
-            <span style={{  paddingLeft: "10px",paddingBottom:'5px' }}>
-              {projects[id]?.client}
-            </span>
+          <span style={{}}>
+            {projects[id]?.rolesAndResponsibillities}
           </span>
         </div>
       </div>
-      <div className={styles.projectSummary}>
-        <div className={styles.rolesAndResponsibillitesHeader}>
-          Project Summary
-        </div>
-        <span style={{  }}>{projects[id]?.summary}</span>
-      </div>
-      <div className={styles.rolesAndResponsibillites}>
-        <div className={styles.rolesAndResponsibillitesHeader}>
-          Roles and Responsibilities
-        </div>
-
-        <span style={{ }}>
-          {projects[id]?.rolesAndResponsibillities}
-        </span>
-      </div>
-    </div>
     </>
   );
 };
