@@ -36,11 +36,11 @@ export default function App({ Component, pageProps }) {
         <div className={styles.section2}>
           {anchorElNav ? <Suspense fallback={<Loading />}><Component {...pageProps}{...navProps} /> </Suspense> :
             <div className={mainPageStyles.container_menu}>
-              <div className={mainPageStyles.item_menu}><Link onClick={() => setAnchorElNav(true)} href="/profile/skills" style={linkStyle}>Skills</Link></div>
+              <div className={mainPageStyles.item_menu}><Link onClick={() => setAnchorElNav(true)} href="/profile/skills" style={linkStyle}>{`Skills`}</Link></div>
               <div className={mainPageStyles.item_menu}><Link onClick={() => setAnchorElNav(true)} style={linkStyle}
-                href="/profile/projectsList">Projects</Link></div>
-              <div className={mainPageStyles.item_menu}><Link onClick={() => setAnchorElNav(true)} href="/profile/education" style={linkStyle}>Education</Link></div>
-              <div className={mainPageStyles.item_menu}><Link onClick={() => setAnchorElNav(true)} href="/profile/workExpirience" style={linkStyle}>Expirience</Link></div>
+                href="/profile/projectsList">{`Projects`}</Link></div>
+              <div className={mainPageStyles.item_menu}><Link onClick={() => setAnchorElNav(true)} href="/profile/education" style={linkStyle}>{`Education`}</Link></div>
+              <div className={mainPageStyles.item_menu}><Link onClick={() => setAnchorElNav(true)} href="/profile/workExperience" style={linkStyle}>{`Experience`}</Link></div>
             </div>}
           <Divider style={{ paddingTop: '40px', }} />
           {anchorElNav && <Footer />}

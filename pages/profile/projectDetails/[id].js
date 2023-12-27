@@ -18,13 +18,13 @@ const ProjectDetails = () => {
         <div className={styles.projectData}>
           <div className={styles.countClient}>
             <span style={{ height: "50%", paddingBottom: '5px' }}>
-              Start Date:
+              {`Start Date :`}
               <span style={{ paddingLeft: "10px", paddingBottom: '5px' }}>
                 {projects[id]?.startDate}
               </span>
             </span>
             <span style={{ height: "50%", paddingBottom: '5px' }}>
-              End Date :{" "}
+              {`End Date :`}
               <span style={{ paddingLeft: "10px", paddingBottom: '5px' }}>
                 {projects[id]?.endDate}
               </span>
@@ -32,7 +32,7 @@ const ProjectDetails = () => {
           </div>
           <div className={styles.countClient}>
             <span style={{ height: "50%", paddingBottom: '5px' }}>
-              Team Size:{" "}
+              {`Team Size :`}
               <span style={{ paddingLeft: "10px", paddingBottom: '5px' }}>
                 {projects[id]?.teamSize}
               </span>
@@ -42,13 +42,13 @@ const ProjectDetails = () => {
         </div>
         <div className={styles.projectSummary}>
           <div className={styles.rolesAndResponsibillitesHeader}>
-            Project Summary
+            {`Project Summary`}
           </div>
           <span style={{}}>{projects[id]?.summary}</span>
         </div>
         <div className={styles.rolesAndResponsibillites}>
           <div className={styles.rolesAndResponsibillitesHeader}>
-            Roles and Responsibilities
+            {`Roles and Responsibilities`}
           </div>
 
           <span style={{}}>

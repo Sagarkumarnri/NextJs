@@ -69,7 +69,7 @@ export const projects = [
   },
 
 ];
-export const workExpirience = [
+export const workExperience = [
   {
     companyName: "LTIMindtree",
     timePeriod: "April 2022 to Present",
@@ -107,5 +107,34 @@ export const workExpirience = [
     Testing and debugging were essential aspects of my role to ensure the functionality and performance of applications.
     I handled deployment, managing the process of taking applications to production servers.`
   }
+
+]
+export const skills = [{
+  skillHeader: "Primary Skills",
+  sillList: ["React", "NextJS", "Redux", "Thunk", "Saga", "HTML", "CSS"]
+
+},
+{
+  skillHeader: "Seconadry Skills",
+  sillList: ["Java", "NextJS", "Redux", "Thunk", "Saga", "HTML", "CSS"]
+
+},
+
+{
+  skillHeader: "UI Libreries",
+  sillList: ["MUI", "Boot Strap"]
+
+},
+{
+  skillHeader: "Cloud Knowledge",
+  sillList: ["AWS", "GCP"]
+
+},
+{
+  skillHeader: "Development Framework",
+  sillList: ["Test Driven Development (TDD)"]
+
+},
+
 
 ]

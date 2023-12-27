@@ -58,7 +58,7 @@ const SideBar = ({ anchorElNav, setAnchorElNav }) => {
         router.replace(`/profile/education`);
         break;
       case "Work Expirience":
-        router.replace(`/profile/workExpirience`)
+        router.replace(`/profile/workExperience`)
         break;
       case "Projects":
         router.replace(`/profile/projectsList`)
@@ -142,7 +142,7 @@ const SideBar = ({ anchorElNav, setAnchorElNav }) => {
               textDecoration: 'none',
             }}
           >
-            {`Fullstack Developer`}
+            {`Full-Stack Developer`}
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
