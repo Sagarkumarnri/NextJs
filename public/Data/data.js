@@ -116,7 +116,7 @@ export const skills = [{
 },
 {
   skillHeader: "Secondary Skills",
-  sillList: ["Java", "NextJS", "Redux", "Thunk", "Saga", "HTML", "CSS"]
+  sillList: ["Java", "Spring Boot"]
 
 },
 
