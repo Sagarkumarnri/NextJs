@@ -37,12 +37,7 @@ const ProjectDetails = () => {
                 {projects[id]?.teamSize}
               </span>
             </span>
-            <span style={{ height: "50%", paddingBottom: '5px' }}>
-              Client:{" "}
-              <span style={{ paddingLeft: "10px", paddingBottom: '5px' }}>
-                {projects[id]?.client}
-              </span>
-            </span>
+
           </div>
         </div>
         <div className={styles.projectSummary}>

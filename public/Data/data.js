@@ -4,7 +4,7 @@ export const projects = [
     startDate: "December 2020",
     endDate: " April 2022",
     teamSize: "12",
-    client: "HSBC",
+
     rolesAndResponsibillities:
       "Understanding the data layer such as logical, physical and transformed data Creating React Components and integrating them with APIs to populate data Developing spring application code with Java 8 features using JDBC queries to extract and load data from SQL database. Developing wrapper APIs for integration between Identity Bridge Platform and Service Now Platform for raising user access requests coming from UI application. Co-ordinating integration with Service Now team for understanding various API parameters for integration such as headers, payloads, response etc. Unit testing of application with units and smoke tests on preprod and prod environments. Deploying and managing applications in Google Cloud Environment with optimized runtime resource configurations. Integrating API's with frontend using React and Axios",
     summary:
@@ -15,7 +15,6 @@ export const projects = [
     startDate: "April 2022",
     endDate: " March 2023",
     teamSize: "6",
-    client: "Internal",
     rolesAndResponsibillities:
       "Writing code and developing React components to implement new features and meetproject requirements.Collaborating closely with fellow developers, designers, and stakeholders to ensure  effective teamwork and a shared understanding of project goals. Maintaining centralized states and data stores using Redux. Designing various components using Bootstrap    Developing, Types, Actions ,Sagas and util components for each of the API’s    Consuming REST API using Axios and maintaining failure and success      Complete detailed programming and development tasks for front end public and internal     websites as well as challenging back-end server code.    Carry out quality assurance tests to discover errors and optimize usability.     Complete detailed programming and development tasks for front end public and internal    websites as well as challenging back-end server code.Carry out quality assurance tests to discover errors and optimize usabilitBuilding REST APIs using Spring BootDeveloping spring application code with Java 8 features using JPA Repository to do CRUDoperations on RDBMS",
     summary: `The application is platform of the Tenet Checklist curated with major product engineering
@@ -29,7 +28,7 @@ export const projects = [
     startDate: "MARCH 2022",
     endDate: " Present",
     teamSize: "12",
-    client: "Ford",
+
     rolesAndResponsibillities: `Identified web based user interaction and developed high level react component
     Translated design and wireframes into high-quality code and wrote application interface
     code via Java script following React.js workflow
@@ -57,7 +56,7 @@ export const projects = [
     startDate: "May 2019",
     endDate: " August 2019",
     teamSize: "4",
-    client: "DRDO",
+
     rolesAndResponsibillities: `I utilized the Django web framework to build web applications.
     My focus was on backend development, where I created server-side logic and integrated databases.
     I was proficient in Python, the programming language used in Django.

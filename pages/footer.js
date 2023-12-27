@@ -15,7 +15,7 @@ const Footer = () => {
 
       <Grid item >
         <div className={styles.footer_header} >Phone</div>
-        <span>9705205604</span>
+        <span>{9705205604}</span>
 
         <Link href="tell:+91 9705205604">
           <CallIcon
