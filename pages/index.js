@@ -48,7 +48,7 @@ export default function Home({ anchorElNav, setAnchorElNav }) {
               </span>
             </div>
             <div className={styles.round_button_container}>
-              <Button className={styles.roundButton_resume} variant="contained" color="primary" onClick={() => router.push("/profile/workExpirience")}>Expirience</Button>
+              <Button className={styles.roundButton_resume} variant="contained" color="primary" onClick={() => router.push("/profile/workExperience")}>Experience</Button>
               <Button className={styles.roundButton_projects} variant="contained" color="primary" onClick={() => router.push("/profile/projectsList")}>Projects</Button>
               <Button className={styles.roundButton_contact} variant="contained" color="primary" onClick={() => router.push("/profile/skills")}>Skills</Button>
 

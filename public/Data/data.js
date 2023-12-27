@@ -69,7 +69,7 @@ export const projects = [
   },
 
 ];
-export const workExpirience = [
+export const workExperience = [
   {
     companyName: "LTIMindtree",
     timePeriod: "April 2022 to Present",

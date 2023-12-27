@@ -40,7 +40,7 @@ export default function App({ Component, pageProps }) {
               <div className={mainPageStyles.item_menu}><Link onClick={() => setAnchorElNav(true)} style={linkStyle}
                 href="/profile/projectsList">Projects</Link></div>
               <div className={mainPageStyles.item_menu}><Link onClick={() => setAnchorElNav(true)} href="/profile/education" style={linkStyle}>Education</Link></div>
-              <div className={mainPageStyles.item_menu}><Link onClick={() => setAnchorElNav(true)} href="/profile/workExpirience" style={linkStyle}>Expirience</Link></div>
+              <div className={mainPageStyles.item_menu}><Link onClick={() => setAnchorElNav(true)} href="/profile/workExpirience" style={linkStyle}>Experience</Link></div>
             </div>}
           <Divider style={{ paddingTop: '40px', }} />
           {anchorElNav && <Footer />}
