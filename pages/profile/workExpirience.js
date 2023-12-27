@@ -4,7 +4,6 @@ import styles from "@/styles/Home.module.css";
 import { Grid } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import { workExpirience } from "@/public/Data/data";
-
 export default function WorkExpirience() {
   return (
     <>

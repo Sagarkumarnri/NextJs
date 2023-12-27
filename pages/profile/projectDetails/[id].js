@@ -7,12 +7,12 @@ import { projects } from "@/public/Data/data";
 const ProjectDetails = () => {
   const router = useRouter();
   const nextRouter = useNextRouter();
-  const id = nextRouter?.query?.id - 1;
-  console.log(nextRouter);
+  const id = nextRouter?.query?.id
+
   return (
     <><ArrowBackIcon
       style={{ cursor: "pointer", paddingBottom: '15px' }}
-      onClick={() => router.push("/profile/projectsList")}/>
+      onClick={() => router.push("/profile/projectsList")} />
       <div className={styles.projectDetails}>
         <div className={styles.projectName}>{projects[id]?.projectName}</div>
         <div className={styles.projectData}>

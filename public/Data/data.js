@@ -51,31 +51,31 @@ export const projects = [
     to charging stations. Additionally, the application maintains detailed records and enables users
     to efficiently replace faulty accessories when needed.`,
   },
-   
+
   {
     projectName: "Remote File Accessing System",
     startDate: "May 2019",
     endDate: " August 2019",
     teamSize: "4",
     client: "DRDO",
-    rolesAndResponsibillities:`I utilized the Django web framework to build web applications.
+    rolesAndResponsibillities: `I utilized the Django web framework to build web applications.
     My focus was on backend development, where I created server-side logic and integrated databases.
     I was proficient in Python, the programming language used in Django.
     I designed and implemented RESTful APIs for smooth communication between the frontend and backend.
     I prioritized security by implementing best practices to protect web applications.
     Testing and debugging were essential aspects of my role to ensure the functionality and performance of applications.
     I handled deployment, managing the process of taking applications to production servers.`,
-     summary:
+    summary:
       "RFA application replicates github like structure as DRDO needed their own version controlling tool for security purposes ",
   },
-   
+
 ];
-export const workExpirience=[
+export const workExpirience = [
   {
     companyName: "LTIMindtree",
     timePeriod: "April 2022 to Present",
     role: "Product Engineer",
-    summary:`Identified web based user interaction and developed high level react component
+    summary: `Identified web based user interaction and developed high level react component
     Translated design and wireframes into high-quality code and wrote application interface
     code via Java script following React.js workflow
     Developing state management workflows with redux and implementing them over React.js
@@ -93,14 +93,14 @@ export const workExpirience=[
     companyName: "Tata Consultancy Services",
     timePeriod: "November 2020 to April 2022",
     role: "Assistant System Engineer",
-    summary:` I excelled in full-stack development, proficiently creating dynamic React-based user interfaces and seamlessly integrating them with backend APIs for efficient data retrieval. On the server side, I developed Java applications, leveraging Java 8 features and utilizing JDBC queries for optimal interaction with SQL databases. A significant aspect of my role involved creating wrapper APIs to facilitate integration between the Identity Bridge Platform and Service Now Platform, including managing user access requests from UI applications. Collaborating closely with the Service Now team, I ensured smooth integration by understanding and implementing various API parameters. Quality assurance was a key focus, with rigorous unit testing and smoke tests conducted on both pre-production and production environments. Additionally, I took charge of deploying applications in the Google Cloud Environment, optimizing runtime resource configurations for efficiency. My role also included a pivotal contribution to integrating APIs with the frontend using React and Axios, establishing effective communication channels between the user interface and backend systems. In summary, my experiences reflect a versatile skill set covering frontend design, backend development, integration, testing, and cloud-based deployment throughout the software development lifecycle.
+    summary: ` I excelled in full-stack development, proficiently creating dynamic React-based user interfaces and seamlessly integrating them with backend APIs for efficient data retrieval. On the server side, I developed Java applications, leveraging Java 8 features and utilizing JDBC queries for optimal interaction with SQL databases. A significant aspect of my role involved creating wrapper APIs to facilitate integration between the Identity Bridge Platform and Service Now Platform, including managing user access requests from UI applications. Collaborating closely with the Service Now team, I ensured smooth integration by understanding and implementing various API parameters. Quality assurance was a key focus, with rigorous unit testing and smoke tests conducted on both pre-production and production environments. Additionally, I took charge of deploying applications in the Google Cloud Environment, optimizing runtime resource configurations for efficiency. My role also included a pivotal contribution to integrating APIs with the frontend using React and Axios, establishing effective communication channels between the user interface and backend systems. In summary, my experiences reflect a versatile skill set covering frontend design, backend development, integration, testing, and cloud-based deployment throughout the software development lifecycle.
     `
   },
-   {
+  {
     companyName: "DRDO",
     timePeriod: "June 2019",
     role: "Intern",
-    summary:`I utilized the Django web framework to build web applications.
+    summary: `I utilized the Django web framework to build web applications.
     My focus was on backend development, where I created server-side logic and integrated databases.
     I was proficient in Python, the programming language used in Django.
     I designed and implemented RESTful APIs for smooth communication between the frontend and backend.

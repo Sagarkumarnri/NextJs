@@ -27,7 +27,7 @@ export default function Home({ anchorElNav, setAnchorElNav }) {
     <>
 
       <div  >
-        <Grid container className={styles.container} >
+        <Grid container className={styles.container_index} >
           <Grid item className={styles.item} >
             <Avatar
               alt="Remy Sharp"

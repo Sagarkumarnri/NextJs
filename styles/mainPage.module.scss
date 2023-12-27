@@ -11,6 +11,13 @@
     align-items: center !important;
     background-color: #ffffff3d !important;
   }
+  .container_index {
+    height: 80vh !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: #ffffff3d !important;
+  }
   @media only screen and (max-width: 600px) {
   .container {
     height: 100vh !important;
@@ -24,8 +31,20 @@
   }
   }
   @media only screen and (max-width: 600px) {
+    .container_index {
+     height: 80vh !important;
+     display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      background-color: #c2c7cb !important;
+      flex-direction: column-reverse !important;
+      padding-top: 80px !important;
+      
+    }
+    }
+  @media only screen and (max-width: 600px) {
     .container {
-      height: 100vh !important;
+     // height: 100vh !important;
      display: flex !important;
       justify-content: center !important;
       align-items: center !important;
@@ -81,13 +100,14 @@
   }}
   
   .avatar_style {
-    width: 150px !important; /* Default size */
-    height: 150px !important; /* Default size */
+    width: 100px !important; /* Default size */
+    height: 100px !important; /* Default size */
   }
   
   /* Media query for smaller screens */
   @media only screen and (max-width: 600px) {
     .avatar_style {
+      margin-top: 80px;
       width: 120px !important; /* Adjust the width for smaller screens */
       height: 120px !important; /* Adjust the height for smaller screens */
     }
@@ -96,16 +116,16 @@
   /* Media query for medium-sized screens */
   @media only screen and (min-width: 601px) and (max-width: 1200px) {
     .avatar_style {
-      width: 400px !important; /* Adjust the width for medium-sized screens */
-      height: 400px !important; /* Adjust the height for medium-sized screens */
+      width: 200px !important; /* Adjust the width for medium-sized screens */
+      height: 200px !important; /* Adjust the height for medium-sized screens */
     }
   }
   
   /* Media query for larger screens */
   @media only screen and (min-width: 1201px) {
     .avatar_style {
-      width: 500px !important; /* Default size for larger screens */
-      height: 500px !important; /* Default size for larger screens */
+      width: 400px !important; /* Default size for larger screens */
+      height: 400px !important; /* Default size for larger screens */
     }
   }
   .roundButton_projects {
