@@ -24,7 +24,7 @@ export const projects = [
        and available capacity`,
   },
   {
-    projectName: "CIFAM",
+    projectName: "Project3",
     startDate: "MARCH 2022",
     endDate: " Present",
     teamSize: "12",
@@ -44,7 +44,7 @@ export const projects = [
     Collaborating with backend developers to develop APIs.
     `,
 
-    summary: `Charging Inventory and Fulfillments (CIFAM) is a web-based application focused on managing
+    summary: ` A web-based application focused on managing
     various chargers and accessories for electronic vehicles. It tracks the deployment statuses
     and warranty-related information, as well as records various transaction phases from factory
     to charging stations. Additionally, the application maintains detailed records and enables users
