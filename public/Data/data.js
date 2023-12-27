@@ -109,3 +109,32 @@ export const workExperience = [
   }
 
 ]
+export const skills = [{
+  skillHeader: "Primary Skills",
+  sillList: ["React", "NextJS", "Redux", "Thunk", "Saga", "HTML", "CSS"]
+
+},
+{
+  skillHeader: "Seconadry Skills",
+  sillList: ["Java", "NextJS", "Redux", "Thunk", "Saga", "HTML", "CSS"]
+
+},
+
+{
+  skillHeader: "UI Libreries",
+  sillList: ["MUI", "Boot Strap"]
+
+},
+{
+  skillHeader: "Cloud Knowledge",
+  sillList: ["AWS", "GCP"]
+
+},
+{
+  skillHeader: "Development Framework",
+  sillList: ["Test Driven Development (TDD)"]
+
+},
+
+
+]
