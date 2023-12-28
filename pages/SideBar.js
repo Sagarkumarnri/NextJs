@@ -19,7 +19,7 @@ import { useRouter } from 'next/navigation'
 import CloseIcon from '@mui/icons-material/Close';
 
 const SideBar = ({ anchorElNav, setAnchorElNav }) => {
-  const pages = ['Work Expirience', 'Education', 'Projects', "Skills"];
+  const pages = ['Work Experience', 'Education', 'Projects', "Skills"];
   const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
   const appBarStyle = {
     backgroundColor: ' #c2c7cb',
@@ -57,7 +57,7 @@ const SideBar = ({ anchorElNav, setAnchorElNav }) => {
       case "Education":
         router.replace(`/profile/education`);
         break;
-      case "Work Expirience":
+      case "Work Experience":
         router.replace(`/profile/workExperience`)
         break;
       case "Projects":
