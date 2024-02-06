@@ -71,9 +71,9 @@ export const projects = [
 ];
 export const workExperience = [
   {
-    companyName: "LTIMindtree",
-    timePeriod: "April 2022 to Present",
-    role: "Product Engineer",
+    companyName: "Ford",
+    timePeriod: "Jan 2024 to Present",
+    role: "Software Engineer",
     summary: `Identified web based user interaction and developed high level react component
     Translated design and wireframes into high-quality code and wrote application interface
     code via Java script following React.js workflow
@@ -87,6 +87,31 @@ export const workExperience = [
     application's functionality works as expected.
     Creating automated tests for the application's end-to-end flow using Cypress
     Collaborating with backend developers to develop APIs.`
+  },
+
+  {
+    companyName: "LTIMindtree",
+    timePeriod: "April 2022 to Jan 2024",
+    role: "Product Engineer",
+    summary: `Writing code and developing React components to implement new features and meet
+    project requirements.
+    Collaborating closely with fellow developers, designers, and stakeholders to ensure
+    effective teamwork and a shared understanding of project goals.
+    Maintaining centralized states and data stores using Redux. Designing various
+    components using Bootstrap
+    Developing, Types, Actions ,Sagas and util components for each of the API’s
+    Consuming REST API using Axios and maintaining failure and success states
+    Complete detailed programming and development tasks for front end public and internal
+    websites as well as challenging back-end server code.
+    Carry out quality assurance tests to discover errors and optimize usability.
+    Complete detailed programming and development tasks for front end public and internal
+    websites as well as challenging back-end server code.
+    Carry out quality assurance tests to discover errors and optimize usability
+    Building REST API's using Spring Boot
+    Developing spring application code with Java 8 features using JPA Repository to do CRUD
+    operations on RDBMS.
+    Created using Resumonk - Online Resume Builder
+    Creating Controllers, Service and DAO classes For each of the API.`
   },
   {
     companyName: "Tata Consultancy Services",
