@@ -136,7 +136,7 @@ export const workExperience = [
 ]
 export const skills = [{
   skillHeader: "Primary Skills",
-  sillList: ["React", "NextJS", "Redux", "Thunk", "Saga", "HTML", "CSS"]
+  sillList: ["React", "NextJS", "Vue", "Express", "Redux", "Thunk", "Saga", "HTML", "CSS"]
 
 },
 {
