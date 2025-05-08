@@ -21,7 +21,7 @@ export default function Education() {
         <Timeline position="alternate" style={{ paddingBottom: "40px" }}>
           <TimelineItem>
             <TimelineOppositeContent  >
-              Graduation (2016-2020)
+              {`Graduation (2016-2020)`}
             </TimelineOppositeContent>
             <TimelineSeparator style={{ paddingBottom: "20px" }}>
               <TimelineDot style={dotStyle} />
@@ -29,15 +29,15 @@ export default function Education() {
             </TimelineSeparator>
             <TimelineContent>
               <div style={{ display: "flex", flexDirection: "column" }}>
-                <span>Nri Institute of Technology</span>
-                <span>(Computer Science and Engineering)</span>
-                <span>CGPA-7.79</span>
+                <span>{`Nri Institute of Technology`}</span>
+                <span>{`(Computer Science and Engineering)`}</span>
+                <span>{`CGPA-7.79`}</span>
               </div>
             </TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineOppositeContent  >
-              +2 ( 2014-2016)
+              {`+2 ( 2014-2016)`}
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot style={dotStyle} />
@@ -45,15 +45,15 @@ export default function Education() {
             </TimelineSeparator>
             <TimelineContent>
               <div style={{ display: "flex", flexDirection: "column" }}>
-                <span>Narayana Junior College</span>
-                <span>MPC</span>
-                <span>96.1%</span>
+                <span>{`Narayana Junior College`}</span>
+                <span>{`MPC`}</span>
+                <span>{`96.1%`}</span>
               </div>
             </TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineOppositeContent style={{ height: "70px" }}  >
-              SSC (2014 passed out)
+              {`SSC (2014 passed out)`}
             </TimelineOppositeContent>
             <TimelineSeparator style={{ height: "70px", }}>
               <TimelineDot style={dotStyle} />
@@ -62,9 +62,9 @@ export default function Education() {
             <TimelineContent>
               {" "}
               <div style={{ display: "flex", flexDirection: "column" }}>
-                <span>Sri Aurobindo High School</span>
-                <span>Pulivendula</span>
-                <span>CGPA-9.5</span>
+                <span>{`Sri Aurobindo High School`}</span>
+                <span>{`Pulivendula`}</span>
+                <span>{`CGPA-9.5`}</span>
               </div>
             </TimelineContent>
           </TimelineItem>

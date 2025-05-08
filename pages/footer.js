@@ -14,8 +14,8 @@ const Footer = () => {
     <Grid container spacing={4} className={styles.footer_container} >
 
       <Grid item >
-        <div className={styles.footer_header} >Phone</div>
-        <span>{9705205604}</span>
+        <div className={styles.footer_header} >{`Phone`}</div>
+        <span>{`9705205604`}</span>
 
         <Link href="tell:+91 9705205604">
           <CallIcon
@@ -28,8 +28,8 @@ const Footer = () => {
         </Link>
       </Grid>
       <Grid item >
-        <div className={styles.footer_header}>Email</div>
-        <span>patrasagarkumar88@gmail.com</span>
+        <div className={styles.footer_header}>{`Email`}</div>
+        <span>{`patrasagarkumar88@gmail.com`}</span>
         <Link href="mailto:patrasagarkumar88@gmail.com">
           <EmailIcon
             style={{
